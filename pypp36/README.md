@@ -1,10 +1,10 @@
-# pypp
+# pypp36
 
 Python++ is a minimalist C++ 2017 compatible static link library providing a modern, lightweight wrapper for embedding the Python Interpreter C API within a compiled windows console application.
 
 ---
 
-Developed by [Tyler R. Drury]()
+Developed by [Tyler R. Drury](https://vigilance91.github.io/)
 
 ---
 
@@ -31,25 +31,14 @@ Finally clean, re-build and run.
 ## Download
 
 Latest Binaries, Static Libraries and Source Code can be found at
-[Vigil Studios]() or from the [GitHub Repo](), if you wish to contribute.
+[V. Studios]() or from the [GitHub Repo](https://github.com/vigilance91/pypp36),
+if you wish to contribute.
 
 ---
 
 ## Contributors
    Tyler R. Drury
    
-
----
-
-## Related Projects
-
-Similar projects for various platforms can also be found here
-
-* [pyppSerializer]()   a C++ python console application for serialization of JSON and/or XML files
-* [pxParser-py]()     python package containing the defaco standard px parser module
-* [pxParser]()   a trivial C++ console application implementing pxParser-py
-* [rpgAlpha]()  a rpg game built using DirectX10, python and the px engine
-
 
 ---
 
