@@ -66,9 +66,10 @@ namespace py
 	///
 	///@brief interface for setting values within the executing interpreter instance
 	///
-	namespace set
+	namespace _set	//conflicts with python type set, so append underscore to differentiate
 	{
-		extern int standardStreamEncoding(char *encoding, char *errors);
+		extern int
+			standardStreamEncoding(char *encoding, char *errors);
 		
 		extern void
 			programName(wchar_t *name),
@@ -79,7 +80,7 @@ namespace py
 	///
 	///@brief interface for setting values for the executing interpreter instance
 	///
-	namespace get {
+	namespace _get {
 		extern wchar_t
 			*path(),
 			*execPrefix(),

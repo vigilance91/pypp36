@@ -22,10 +22,9 @@ PY_NS_BEGIN
 struct unicode sealed
 :   public object
 {
-    unicode(PyObject* pyUnicode)
-    :   object(pyUnicode){
-    }
-    ~unicode(){
+	unicode(PyObject* pyUnicode);
+    
+    virtual ~unicode(){
     }
     //
     //operator +(){

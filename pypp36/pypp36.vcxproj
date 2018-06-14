@@ -150,19 +150,25 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="error.h" />
     <ClInclude Include="eval.h" />
     <ClInclude Include="marshal.h" />
     <ClInclude Include="py.h" />
     <ClInclude Include="pypp36.h" />
     <ClInclude Include="run.h" />
     <ClInclude Include="sys.h" />
+    <ClInclude Include="types\numeric\numeric.h" />
+    <ClInclude Include="types\object.h" />
+    <ClInclude Include="types\types.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="error.cpp" />
     <ClCompile Include="marshal.cpp" />
     <ClCompile Include="py.cpp" />
     <ClCompile Include="eval.cpp" />
     <ClCompile Include="run.cpp" />
     <ClCompile Include="sys.cpp" />
+    <ClCompile Include="types\module.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

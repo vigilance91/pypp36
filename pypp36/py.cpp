@@ -2,9 +2,10 @@
 #include "py.h"
 #include <Python.h>
 //-~~--~-~-~~~-~--~~~-~~-~~~~~~~---~~--~-~-~~~-~--~~~-~~-~~~~~~~
-using namespace py;
-//namespace py::get = g;
-//namespace py::set = s;
+//using namespace py;
+namespace pg = py::_get;
+namespace ps = py::_set;
+namespace prog = py::program;
 //-~~--~-~-~~~-~--~~~-~~-~~~~~~~---~~--~-~-~~~-~--~~~-~~-~~~~~~~
 void py::init(){
 	//_prog=
@@ -46,16 +47,16 @@ int py::atExit(void(*func)()) {
 	return Py_AtExit(func);
 }
 //-~~--~-~-~~~-~--~~~-~~-~~~~~~~---~~--~-~-~~~-~--~~~-~~-~~~~~~~
-int set::standardStreamEncoding(char *encoding, char *errors){
+int ps::standardStreamEncoding(char *encoding, char *errors){
 	return Py_SetStandardStreamEncoding(encoding, errors);
 }
-void set::programName(wchar_t *name) {
+void ps::programName(wchar_t *name) {
 	Py_SetProgramName(name);
 }
-void set::path(const wchar_t* p) {
+void ps::path(const wchar_t* p) {
 	Py_SetPath(p);
 }
-void set::pythonHome(wchar_t *home) {
+void ps::pythonHome(wchar_t *home) {
 	return Py_SetPythonHome(home);
 }
 //-~~--~-~-~~~-~--~~~-~~-~~~~~~~---~~--~-~-~~~-~--~~~-~~-~~~~~~~
@@ -63,33 +64,33 @@ wchar_t* execPrefix() {
 	return Py_GetExecPrefix();
 }
 //-~~--~-~-~~~-~--~~~-~~-~~~~~~~---~~--~-~-~~~-~--~~~-~~-~~~~~~~
-wchar_t *program::name() {
+wchar_t *prog::name(){
 	return Py_GetProgramName();
 }
-wchar_t* program::fullPath(){
+wchar_t* prog::fullPath(){
 	return Py_GetProgramFullPath();
 }
 //-~~--~-~-~~~-~--~~~-~~-~~~~~~~---~~--~-~-~~~-~--~~~-~~-~~~~~~~
-wchar_t* path() {
+wchar_t* path(){
 	return Py_GetPath();
 }
 ///python version
-const char* get::version(){
+const char* pg::version(){
 	return Py_GetVersion();
 }
-const char* get::platform(){
+const char* pg::platform(){
 	return Py_GetPlatform();
 }
-const char* get::copyright(){
+const char* pg::copyright(){
 	return Py_GetCopyright();
 }
 ///compiler version used to build python
-const char* get::complier(){
+const char* pg::complier(){
 	return Py_GetCompiler();
 }
-const char* get::buildInfo(){
+const char* pg::buildInfo(){
 	return Py_GetBuildInfo();
 }
-wchar_t* get::pythonHome(){
+wchar_t* pg::pythonHome(){
 	return Py_GetPythonHome();
 }
