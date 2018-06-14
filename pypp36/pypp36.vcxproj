@@ -98,6 +98,9 @@
     <Link>
       <SubSystem>Windows</SubSystem>
     </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -111,6 +114,9 @@
     <Link>
       <SubSystem>Windows</SubSystem>
     </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -128,6 +134,9 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -145,6 +154,9 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -168,7 +180,24 @@
     <ClCompile Include="eval.cpp" />
     <ClCompile Include="run.cpp" />
     <ClCompile Include="sys.cpp" />
+    <ClCompile Include="types\containers\dictionary.cpp" />
+    <ClCompile Include="types\containers\list.cpp" />
+    <ClCompile Include="types\containers\sequence.cpp" />
+    <ClCompile Include="types\containers\set.cpp" />
+    <ClCompile Include="types\containers\tuple.cpp" />
+    <ClCompile Include="types\containers\unicode.cpp" />
+    <ClCompile Include="types\exc.cpp" />
     <ClCompile Include="types\module.cpp" />
+    <ClCompile Include="types\numeric\floatObject.cpp" />
+    <ClCompile Include="types\numeric\longObject.cpp" />
+    <ClCompile Include="types\numeric\number.cpp" />
+    <ClCompile Include="types\object.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="python36.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="python36.lib" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

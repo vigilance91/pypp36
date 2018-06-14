@@ -12,12 +12,7 @@
 #include "object.h"
 //
 #include "numeric\\numeric.h"
-//#include "containers\\containers.h"
-#include "list.h"
-#include "set.h"
-#include "tuple.h"
-#include "dictionary.h"
-#include "unicode.h"
+#include "containers\\containers.h"
 //
 #include "exc.h"
 #include "module.h"

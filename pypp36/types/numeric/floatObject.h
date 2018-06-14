@@ -20,24 +20,36 @@ PY_NS_BEGIN
 struct floatObject sealed
 :   public object   //px::py::numeric
 {
-    explicit floatObject(PyObject* pyFloat)
-    :   object(pyFloat){   //numeric
-    }
+	explicit floatObject(PyObject* pyFloat);
+
     //explicit longObject(long l)
     //:   pxpyObject(nullptr){
         //_ptr = fromLong(l);
     //}
     virtual ~floatObject(){
     }
-    static double getMax(){
-        return PyFloat_GetMax();
-    }
-    static double getMin(){
-        return PyFloat_GetMin();
-    }
-    static PyObject *getInfo(){
-        return PyFloat_GetInfo();
-    }
+
+	static const double
+		getMin(),
+		getMax(),
+		/* The unpack routines read 4 or 8 bytes, starting at p.  le is a bool
+		* argument, true if the string is in little-endian format (exponent
+		* last, at p+3 or p+7), false if big-endian (exponent first, at p).
+		* Return value:  The unpacked double.  On error, this is -1.0 and
+		* PyErr_Occurred() is true (and an exception is set, most likely
+		* OverflowError).  Note that on a non-IEEE platform this will refuse
+		* to unpack a string that represents a NaN or infinity.
+		*/
+		_unpack4(
+			const unsigned char *p,
+			int le
+		),
+		_unpack8(
+			const unsigned char *p,
+			int le
+		);
+
+	static PyObject *getInfo();
     //
     //these functions return new references which much be decRef'ed before deallocation!
     //
@@ -45,15 +57,9 @@ struct floatObject sealed
         //return Python float from string PyObject
     //    return PyFloat_FromString();
     //}
-    static PyObject *fromDouble(double d){
-        //return Python float from C double, new ref
-        return PyFloat_FromDouble(d);
-    }
+	static PyObject *fromDouble(double d);
 
-    double asDouble(){
-        //Extract C double from Python float, the macro version trades safety for speed
-        return PyFloat_AsDouble(_ptr);
-    }
+	const double asDouble();
 #ifndef Py_LIMITED_API
     /* _PyFloat_{Pack,Unpack}{4,8}
     *
@@ -87,43 +93,26 @@ struct floatObject sealed
     * 1):  What this does is undefined if x is a NaN or infinity.
     * 2):  -0.0 and +0.0 produce the same string.
     */
-    static int _pack4(double x, unsigned char *p, int le){
-        return _PyFloat_Pack4(x, p, le);
-    }
-    static int _pack8(double x, unsigned char *p, int le){
-        return _PyFloat_Pack8(x, p, le);
-    }
-    //needed for the old way for marshal to store a floating point number.
+	static const int
+		//free list api
+		_clearFreeList(),
+		_pack4(double x, unsigned char *p, int le),
+		_pack8(double x, unsigned char *p, int le);
+    
+	//needed for the old way for marshal to store a floating point number.
     //returns the string length copied into p, -1 on error.
-    int _repr(double x, char *p, size_t len){
-        return _PyFloat_Repr(x, p, len);
-    }
-    int _digits(char *buf, double v, int *signum){
-        //Used to get the important decimal digits of a double
-        return _PyFloat_Digits(buf, v, signum);
-    }
-    static void _digitsInit(){
-        return _PyFloat_DigitsInit();
-    }
-    /* The unpack routines read 4 or 8 bytes, starting at p.  le is a bool
-    * argument, true if the string is in little-endian format (exponent
-    * last, at p+3 or p+7), false if big-endian (exponent first, at p).
-    * Return value:  The unpacked double.  On error, this is -1.0 and
-    * PyErr_Occurred() is true (and an exception is set, most likely
-    * OverflowError).  Note that on a non-IEEE platform this will refuse
-    * to unpack a string that represents a NaN or infinity.
-    */
-    static double _unpack4(const unsigned char *p, int le){
-        return _PyFloat_Unpack4(p, le);
-    }
-    static double _unpack8(const unsigned char *p, int le){
-        return _PyFloat_Unpack8(p, le);
-    }
+    const int
+		_repr(
+			double x, char *p, size_t len
+		),
+		_digits(
+			char *buf,
+			double v,
+			int *signum
+		);
 
-    //free list api
-    static int _clearFreeList(){
-        return PyFloat_ClearFreeList();
-    }
+	static void _digitsInit();
+
     //PyObject *_formatAdvanced(
     //    Py_UNICODE *format_spec,
     //    Py_ssize_t format_spec_len

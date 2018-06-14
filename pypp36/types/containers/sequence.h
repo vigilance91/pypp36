@@ -9,7 +9,7 @@
 #ifndef PYPP_SEQUENCE_H
 #define PYPP_SEQUENCE_H
 //-~~--~-~-~~~-~--~~~-~~-~~~~~~~---~~--~-~-~~~-~--~~~-~~-~~~~~~~
-#include "object.h"
+#include "../object.h"
 //-~~--~-~-~~~-~--~~~-~~-~~~~~~~---~~--~-~-~~~-~--~~~-~~-~~~~~~~
 PY_NS_BEGIN
 ///

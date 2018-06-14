@@ -1,7 +1,5 @@
 #include "list.h"
-//#include <Python.h>
 //
-//using namespace py::marshal;
 typedef py::object pyObj;
 typedef py::list li;
 //

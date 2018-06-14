@@ -38,30 +38,16 @@ PY_NS_BEGIN
 struct number sealed
 :   public object
 {
-    number(PyObject* pyNumber)
-    :   object(pyNumber){
-    }
-    ~number(){
+	number(PyObject* pyNumber);
+    virtual ~number(){
     }
     //cast operator
-    PyObject *asLongObj(){
-        //creates new ref, copy of value held by _ptr
-        return PyNumber_Long(_ptr);
-    }
-    PyObject *asFloatObj(PyObject *o){
-        //creates new ref, copy of value held by _ptr
-        return PyNumber_Float(_ptr);
-    }
-    PyObject* operator +(const number& rhs){
-        //|| asFloat(lhs) + asFloat(rhs);
-        return PyNumber_Add(this->get(), rhs.get() ); //preforms add in python
-    }
-    PyObject* operator -(const number& rhs){
-        return PyNumber_Subtract(this->get(), rhs.get() );
-    }
-    PyObject* operator *(const number& rhs){
-        return PyNumber_Multiply(this->get(), rhs.get() );
-    }
+	PyObject *asLongObj();
+	PyObject *asFloatObj(PyObject *o);
+	//overloaded arithmetic operators
+	PyObject* operator +(const number& rhs);
+	PyObject* operator -(const number& rhs);
+	PyObject* operator *(const number& rhs);
     //prefix ........ +o
     //prefix negation -o
 

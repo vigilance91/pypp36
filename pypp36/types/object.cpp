@@ -1,11 +1,11 @@
-#include "object.h"
+#include "./object.h"
 //
 //using namespace py::marshal;
 typedef py::object obj;
 //
 typedef PyObject *pyPtr;
 //
-obj(pyPtr ptr = nullptr)   //dealloc = nullptr //assign to &pxpy::decRef for (this) to deallocate
+obj::object(pyPtr ptr)   //dealloc = nullptr //assign to &pxpy::decRef for (this) to deallocate
 :	_ptr(ptr)
 {
 	//copy construct pointer,
@@ -43,26 +43,26 @@ int obj::setAttrString(
 	const NString& str,
 	PyObject* value
 ){
-	PyObject_SetAttrString(_ptr, str.c_str(), value);
+	return _ptr?PyObject_SetAttrString(_ptr, str.c_str(), value):-1;
 }
 int obj::hasAttrString(
 	const NString& str
 )const{
-	return PyObject_HasAttrString(_ptr, str.c_str());
+	return _ptr?PyObject_HasAttrString(_ptr, str.c_str()):-1;
 }
 int obj::setAttr(
 	PyObject* key,
 	PyObject* value
 ){
-	return PyObject_SetAttr(_ptr, key, value);
+	return _ptr?PyObject_SetAttr(_ptr, key, value):-1;
 }
 int obj::hasAttr(
 	PyObject* attr
 )const{
-	return PyObject_HasAttr(_ptr, attr);
+	return _ptr?PyObject_HasAttr(_ptr, attr):-1;
 }
 int obj::isCallable()const{
-	return PyCallable_Check(_ptr);
+	return _ptr?PyCallable_Check(_ptr):-1;
 }
 void obj::clearWeakRefs(){
 	if(_ptr){

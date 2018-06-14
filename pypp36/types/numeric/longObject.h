@@ -20,21 +20,17 @@ PY_NS_BEGIN
 struct longObject sealed
 :   public object   //px::py::numeric
 {
-    explicit longObject(PyObject* pyLong)
-    :   object(pyLong){   //numeric
-    }
+	explicit longObject(PyObject* pyLong);
     //explicit longObject(long l)
     //:   pxpyObject(nullptr){
         //_ptr = fromLong(l);
     //}
     virtual ~longObject(){
     }
-    static PyObject *fromLong(long l){
-        //creates new python long object
-        return PyLong_FromLong(l);
-    }
-    static PyObject *fromUnsignedLong(unsigned long){
-    }
+	static PyObject
+		*fromLong(const long l),
+		*fromUnsignedLong(const unsigned long);
+
     //static PyObject *fromSize_t(size_t size){
         //return PyLong_FromSize_t(size);   //new ref
     //}
@@ -45,9 +41,7 @@ struct longObject sealed
         //return PyLong_FromDouble(d);
     //}
 
-    long asLong(){
-        return PyLong_AsLong(_ptr);
-    }
+	const long asLong();
     //long PyLong_AsLongAndOverflow(int *overflow){
         //return PyLong_AsLongAndOverflow(_ptr, overflow);
     //}
@@ -55,18 +49,14 @@ struct longObject sealed
     //Py_ssize_t asSsize_t(){
         //return PyLong_AsSsize_t(_ptr);
     //}
-    size_t asSize_t(){
-        return PyLong_AsSize_t(_ptr);
-    }
-    unsigned long asUnsignedLong(){
-        return PyLong_AsUnsignedLong(_ptr);
-    }
-    unsigned long asUnsignedLongMask(){
-        return PyLong_AsUnsignedLongMask(_ptr);
-    }
-    static PyObject *getInfo(){
-        return PyLong_GetInfo();   //new ref
-    }
+	const size_t asSize_t();
+
+	const unsigned long
+		asUnsignedLong(),
+		asUnsignedLongMask();
+
+	static PyObject *getInfo();
+
    /* _PyLong_Frexp returns a double x and an exponent e such that the
    true value is approximately equal to x * 2**e.  e is >= 0.  x is
    0.0 if and only if the input is 0 (in which case, e and x are both
@@ -79,9 +69,7 @@ struct longObject sealed
     //}
 #endif
 
-    double asDouble(){
-        return PyLong_AsDouble(_ptr);
-    }
+	const double asDouble();
     //static PyObject *fromVoidPtr(void *ptr){
         //return PyLong_FromVoidPtr(ptr);
     //}
@@ -97,31 +85,25 @@ struct longObject sealed
     //    return PyLong_FromUnsignedLongLong(ull);
     //}
     //getters
-    PY_LONG_LONG asLongLong(){
-        return PyLong_AsLongLong(_ptr);
-    }
-    unsigned PY_LONG_LONG asUnsignedLongLong(){
-        return PyLong_AsUnsignedLongLong(_ptr);
-    }
-    unsigned PY_LONG_LONG asUnsignedLongLongMask(){
-        return PyLong_AsUnsignedLongLongMask(ptr);
-    }
-    PY_LONG_LONG asLongLongAndOverflow(int *overflow){
-        return PyLong_AsLongLongAndOverflow(_ptr, overflow);
-    }
+	const PY_LONG_LONG
+		asLongLong(),
+		asLongLongAndOverflow(int *overflow);
+
+	const unsigned PY_LONG_LONG
+		asUnsignedLongLong(),
+		asUnsignedLongLongMask();
+
 #endif /* HAVE_LONG_LONG */
 
     //static PyObject * fromString(char *str, char **ary, int i){
         //return PyLong_FromString(str, ary, i);
     //}
 #ifndef Py_LIMITED_API
-    static PyObject * fromUnicode(
-        /*wchar_t*/Py_UNICODE *puo,
-        Py_ssize_t size,
-        int i
-    ){
-        return PyLong_FromUnicode(puo, size, i);
-    }
+	static PyObject * fromUnicode(
+		/*wchar_t*/Py_UNICODE *puo,
+		Py_ssize_t size,
+		int i
+	);
 #endif
 
 #ifndef Py_LIMITED_API
@@ -129,9 +111,7 @@ struct longObject sealed
        v must not be NULL, and must be a normalized long.
        There are no error cases.
     */
-    int _sign(){
-        return _PyLong_Sign(_ptr);
-    }
+	const int _sign();
     /* _PyLong_NumBits.  Return the number of bits needed to represent the
        absolute value of a long.  For example, this returns 1 for 1 and -1, 2
        for 2 and -2, and 2 for 3 and -3.  It returns 0 for 0.
@@ -139,9 +119,8 @@ struct longObject sealed
        (size_t)-1 is returned and OverflowError set if the true result doesn't
        fit in a size_t.
     */
-    size_t _numBits(){
-        return _PyLong_NumBits(_ptr);
-    }
+	const size_t _numBits();
+
     /* _PyLong_DivmodNear.  Given integers a and b, compute the nearest
        integer q to the exact quotient a / b, rounding to the nearest even integer
        in the case of a tie.  Return (q, r), where r = a - q*b.  The remainder r

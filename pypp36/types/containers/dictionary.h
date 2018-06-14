@@ -1,5 +1,4 @@
 //-~~--~-~-~~~-~--~~~-~~-~~~~~~~---~~--~-~-~~~-~--~~~-~~-~~~~~~~
-//pxpy\\dictionary.h, by Tyler R. Drury (C) May 30, 2013, All Rights Reserved
 ///
 ///@file dictionary.h
 ///@author Tyler R. Drury
@@ -11,7 +10,7 @@
 #ifndef PYPP_DICTIONARY_H
 #define PYPP_DICTIONARY_H
 //-~~--~-~-~~~-~--~~~-~~-~~~~~~~---~~--~-~-~~~-~--~~~-~~-~~~~~~~
-#include "object.h"
+#include "../object.h"
 //-~~--~-~-~~~-~--~~~-~~-~~~~~~~---~~--~-~-~~~-~--~~~-~~-~~~~~~~
 PY_NS_BEGIN
 ///
@@ -22,9 +21,9 @@ PY_NS_BEGIN
 struct dictionary
 :	public py::object
 {
-	dictionary(PyObject* dict);
+	explicit dictionary(PyObject* dict);
 	
-	virtual ~dictionary() {
+	virtual ~dictionary(){
 		//this data structure does not release the underlying PyObject,
 		//the calling programmer must call all approriate clean-up code
 	}

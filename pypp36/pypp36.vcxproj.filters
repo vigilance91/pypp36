@@ -19,6 +19,12 @@
     <Filter Include="Header Files\types">
       <UniqueIdentifier>{52944413-4589-46df-b1b9-a6fa60a89c6e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\types\numeric">
+      <UniqueIdentifier>{0abaeedc-2553-4db0-8894-a4ce0f3a4a14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\types\containers">
+      <UniqueIdentifier>{abb2ec3f-0a48-487e-86fe-f59afc779fe6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -77,5 +83,44 @@
     <ClCompile Include="types\module.cpp">
       <Filter>Source Files\types</Filter>
     </ClCompile>
+    <ClCompile Include="types\exc.cpp">
+      <Filter>Source Files\types</Filter>
+    </ClCompile>
+    <ClCompile Include="types\object.cpp">
+      <Filter>Source Files\types</Filter>
+    </ClCompile>
+    <ClCompile Include="types\containers\dictionary.cpp">
+      <Filter>Source Files\types\containers</Filter>
+    </ClCompile>
+    <ClCompile Include="types\containers\list.cpp">
+      <Filter>Source Files\types\containers</Filter>
+    </ClCompile>
+    <ClCompile Include="types\containers\sequence.cpp">
+      <Filter>Source Files\types\containers</Filter>
+    </ClCompile>
+    <ClCompile Include="types\containers\set.cpp">
+      <Filter>Source Files\types\containers</Filter>
+    </ClCompile>
+    <ClCompile Include="types\containers\tuple.cpp">
+      <Filter>Source Files\types\containers</Filter>
+    </ClCompile>
+    <ClCompile Include="types\containers\unicode.cpp">
+      <Filter>Source Files\types\containers</Filter>
+    </ClCompile>
+    <ClCompile Include="types\numeric\floatObject.cpp">
+      <Filter>Source Files\types\numeric</Filter>
+    </ClCompile>
+    <ClCompile Include="types\numeric\longObject.cpp">
+      <Filter>Source Files\types\numeric</Filter>
+    </ClCompile>
+    <ClCompile Include="types\numeric\number.cpp">
+      <Filter>Source Files\types\numeric</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="python36.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="python36.lib" />
   </ItemGroup>
 </Project>
