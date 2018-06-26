@@ -12,19 +12,21 @@ Developed by [Tyler R. Drury](https://vigilance91.github.io/)
 
 * x64 Windows OS
 * Visual Studios 2017/MSVC 2017 compiler
-* Python 3.6
+* Python 3.6 (64-bit)
 
 ---
 
 ## Use
 
-Along with a copy of python36.dll, the file pypp36.lib should be included within the project.
+Along with a copy of python36.dll, the file pypp36.lib should be included with the project.
     
 Then, from the top of your project's main file, include the line
 
     #include "pypp36.h";
     
 Finally clean, re-build and run.
+
+See [pypp-cli](https://github.com/vigilance91/pypp-cli) for more in-depth walk-through of starting a Python embedded C++ application.
 
 ---
 
