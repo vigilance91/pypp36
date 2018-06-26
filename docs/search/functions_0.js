@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['_5f_5finit_5f_5f',['__init__',['../classinteger_sequence_1_1horadam_1_1_horadam.html#ade8c6f0fcadf741ac76bb421fbc56137',1,'integerSequence.horadam.Horadam.__init__()'],['../classinteger_sequence_1_1padovan_1_1_padovan.html#aae88cd5c7a7f1724b4eb0b216e41f0dc',1,'integerSequence.padovan.Padovan.__init__()']]]
+  ['addwarnoption',['addWarnOption',['../namespacesys.html#af53a0e5ce7be26c23ea3edda4c7bf51a',1,'sys']]],
+  ['addwarnoptionunicode',['addWarnOptionUnicode',['../namespacesys.html#af2ffa3ff42019d65875d3d1e347cc95d',1,'sys']]],
+  ['atexit',['atExit',['../namespacepy.html#a0f64b92f0cd1f3bd4ab560a2dc088c30',1,'py']]]
 ];

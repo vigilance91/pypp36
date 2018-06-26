@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['padovan_2epy',['padovan.py',['../padovan_8py.html',1,'']]],
-  ['pelllucas_2epy',['pellLucas.py',['../pell_lucas_8py.html',1,'']]],
-  ['polygonal_2epy',['polygonal.py',['../polygonal_8py.html',1,'']]],
-  ['polyhedral_2epy',['polyhedral.py',['../polyhedral_8py.html',1,'']]],
-  ['prime_2epy',['prime.py',['../prime_8py.html',1,'']]]
+  ['list_2eh',['list.h',['../list_8h.html',1,'']]],
+  ['longobject_2eh',['longObject.h',['../long_object_8h.html',1,'']]]
 ];

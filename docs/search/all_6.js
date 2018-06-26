@@ -1,16 +1,9 @@
 var searchData=
 [
-  ['h',['H',['../classinteger_sequence_1_1hofstadter_1_1_h.html',1,'integerSequence::hofstadter']]],
-  ['hectagonal',['Hectagonal',['../classinteger_sequence_1_1polygonal_1_1_hectagonal.html',1,'integerSequence::polygonal']]],
-  ['hectahedral',['Hectahedral',['../classinteger_sequence_1_1polyhedral_1_1_hectahedral.html',1,'integerSequence::polyhedral']]],
-  ['heptagonal',['Heptagonal',['../classinteger_sequence_1_1polygonal_1_1_heptagonal.html',1,'integerSequence::polygonal']]],
-  ['heptahedral',['Heptahedral',['../classinteger_sequence_1_1polyhedral_1_1_heptahedral.html',1,'integerSequence::polyhedral']]],
-  ['hexadecagonal',['Hexadecagonal',['../classinteger_sequence_1_1polygonal_1_1_hexadecagonal.html',1,'integerSequence::polygonal']]],
-  ['hexadecahedral',['Hexadecahedral',['../classinteger_sequence_1_1polyhedral_1_1_hexadecahedral.html',1,'integerSequence::polyhedral']]],
-  ['hexagonal',['Hexagonal',['../classinteger_sequence_1_1polygonal_1_1_hexagonal.html',1,'integerSequence::polygonal']]],
-  ['hexahedral',['Hexahedral',['../classinteger_sequence_1_1polyhedral_1_1_hexahedral.html',1,'integerSequence::polyhedral']]],
-  ['hofstadter_2epy',['hofstadter.py',['../hofstadter_8py.html',1,'']]],
-  ['hofstadterbase',['HofstadterBase',['../classinteger_sequence_1_1hofstadter_1_1_hofstadter_base.html',1,'integerSequence::hofstadter']]],
-  ['horadam',['Horadam',['../classinteger_sequence_1_1horadam_1_1_horadam.html',1,'integerSequence::horadam']]],
-  ['horadam_2epy',['horadam.py',['../horadam_8py.html',1,'']]]
+  ['getcause',['getCause',['../structerror_1_1sealed.html#ac587178052583d2691bae95cf2cdbfaa',1,'error::sealed::getCause()'],['../structsealed.html#a819972bfdaf02fd16f51922013cc7fbe',1,'sealed::getCause()']]],
+  ['getobject',['getObject',['../namespacesys.html#a3b93dae78f269ace7c649628e3ba1a8c',1,'sys']]],
+  ['gettraceback',['getTraceback',['../structerror_1_1sealed.html#ab89645f7fd890598e25834df25b485f7',1,'error::sealed::getTraceback()'],['../structsealed.html#ab34ca8d07e47b57fcb5a8c5b565babac',1,'sealed::getTraceback()']]],
+  ['gkeys',['gKeys',['../structdict.html#a60b7037f356f74b6b364aa07635cc55a',1,'dict']]],
+  ['globals',['globals',['../namespaceeval_1_1get.html#af8b5769770b91f49a25666e611b44d52',1,'eval::get']]],
+  ['gvalues',['gValues',['../structdict.html#ab992c2f6084868a5934c89082e76e206',1,'dict']]]
 ];

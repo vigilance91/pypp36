@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['newman',['Newman',['../class_newman.html',1,'']]],
-  ['newmanshakeswilliam',['NewmanShakesWilliam',['../classinteger_sequence_1_1horadam_1_1_newman_shakes_william.html',1,'integerSequence::horadam']]],
-  ['nonagonal',['Nonagonal',['../classinteger_sequence_1_1polygonal_1_1_nonagonal.html',1,'integerSequence::polygonal']]],
-  ['nonahedral',['Nonahedral',['../classinteger_sequence_1_1polyhedral_1_1_nonahedral.html',1,'integerSequence::polyhedral']]]
+  ['nomemory',['NoMemory',['../error_8h.html#a1a4eaa84b5038426b6fab51b7334e45e',1,'error']]],
+  ['none',['none',['../error_8h.html#ac12e44f55b7e65fd91f26d59d8299f45',1,'error::set']]],
+  ['number_2eh',['number.h',['../number_8h.html',1,'']]]
 ];

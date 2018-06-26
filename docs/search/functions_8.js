@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['validate',['validate',['../classinteger_sequence_1_1horadam_1_1_horadam.html#aafe999fbfb0c8ff3786c726bfb90011d',1,'integerSequence.horadam.Horadam.validate()'],['../classinteger_sequence_1_1padovan_1_1_padovan.html#a8c92cf8296ad6771d45b4d8c1a6c6c63',1,'integerSequence.padovan.Padovan.validate()']]],
-  ['validateit',['validateIt',['../classinteger_sequence_1_1horadam_1_1_horadam.html#a646cb00db02f628f69a7f19f54cbe863',1,'integerSequence.horadam.Horadam.validateIt()'],['../classinteger_sequence_1_1padovan_1_1_padovan.html#add068e5df20eee36a69d9e6e0cfdd00c',1,'integerSequence.padovan.Padovan.validateIt()']]]
+  ['incref',['incRef',['../classobject.html#a4726ec83a8e27d96e8910c791234191c',1,'object']]],
+  ['init',['init',['../namespacepy.html#ad05fec7a026eff5c4aa6bd238aadfe2a',1,'py']]],
+  ['isinitialized',['isInitialized',['../namespacepy.html#a0be244c3ae63600a8500083bdc768e47',1,'py']]]
 ];
