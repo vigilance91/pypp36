@@ -33,7 +33,7 @@ See [pypp-cli](https://github.com/vigilance91/pypp-cli) for more in-depth walk-t
 ## Download
 
 Latest Binaries, Static Libraries and Source Code can be found at
-[V. Studios]() or from the [GitHub Repo](https://github.com/vigilance91/pypp36),
+[here](https://vigilance91.github.io/) or from the GitHub Repo [here](https://github.com/vigilance91/pypp36),
 if you wish to contribute.
 
 ---
@@ -48,6 +48,6 @@ if you wish to contribute.
 
 * [Official Python Home](https://www.python.org/)
 * [Official Python 3 C API Reference](https://docs.python.org/3/c-api/intro.html)
-* [Official Python++ Reference]()
+* [Official Python++ Reference](https://vigilance91.github.io/pypp36/index.html)
 
 ---

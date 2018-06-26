@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['hasonlystringkeys',['hasOnlyStringKeys',['../structdict.html#afe205e6c433760b27bf5795d3f0b615a',1,'dict']]]
+  ['hasonlystringkeys',['hasOnlyStringKeys',['../structdictionary.html#a46bf5e93e198f502a0735eb065eb6466',1,'dictionary']]]
 ];

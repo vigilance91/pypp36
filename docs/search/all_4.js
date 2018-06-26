@@ -4,6 +4,8 @@ var searchData=
   ['eval',['eval',['../namespaceeval.html',1,'']]],
   ['eval_2eh',['eval.h',['../eval_8h.html',1,'']]],
   ['exc_2eh',['exc.h',['../exc_8h.html',1,'']]],
+  ['exception',['exception',['../structexception.html',1,'']]],
   ['exit',['exit',['../namespacepy.html#a972a8f1c7cfdad56afd37bbb77d517b8',1,'py']]],
-  ['get',['get',['../namespaceeval_1_1get.html',1,'eval']]]
+  ['get',['get',['../namespaceeval_1_1get.html',1,'eval']]],
+  ['set',['set',['../namespaceerror_1_1set.html',1,'error']]]
 ];

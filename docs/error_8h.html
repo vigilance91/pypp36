@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Python++: error.h File Reference</title>
+<title>Python++36: error.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Python++
+   <div id="projectname">Python++36
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
   </td>
@@ -60,7 +60,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">error.h File Reference</div>  </div>
@@ -69,13 +69,13 @@ $(function() {
 
 <p>wrapper for Python error interface  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="object_8h_source.html">object.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="py_8h_source.html">py.h</a>&quot;</code><br />
 </div>
 <p><a href="error_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structerror_1_1sealed.html">error::sealed</a></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespaceerror_1_1set"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceerror_1_1set.html">error::set</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -86,8 +86,19 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>error::printEx</b> (i
 <tr class="memitem:ae3bf741774858869b249e2082ac96607"><td class="memItemLeft" align="right" valign="top"><a id="ae3bf741774858869b249e2082ac96607"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>error::print</b> ()</td></tr>
 <tr class="separator:ae3bf741774858869b249e2082ac96607"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a061b9457e733652010f1845a3caac0fb"><td class="memItemLeft" align="right" valign="top"><a id="a061b9457e733652010f1845a3caac0fb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>error::normalizeException</b> ()</td></tr>
+<tr class="separator:a061b9457e733652010f1845a3caac0fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4e0e5575c0ab1ef493733f636415db0"><td class="memItemLeft" align="right" valign="top"><a id="af4e0e5575c0ab1ef493733f636415db0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="error_8h.html#af4e0e5575c0ab1ef493733f636415db0">error::clear</a> ()</td></tr>
+<tr class="memdesc:af4e0e5575c0ab1ef493733f636415db0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the error indicator. If the error indicator is not set, there is no effect. <br /></td></tr>
+<tr class="separator:af4e0e5575c0ab1ef493733f636415db0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a885d60c888327af0009cc364a7658240"><td class="memItemLeft" align="right" valign="top"><a id="a885d60c888327af0009cc364a7658240"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="error_8h.html#a885d60c888327af0009cc364a7658240">error::fetch</a> ()</td></tr>
+<tr class="memdesc:a885d60c888327af0009cc364a7658240"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the error indicator into three variables whose addresses are passed. <br /></td></tr>
+<tr class="separator:a885d60c888327af0009cc364a7658240"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b07139a46e740af52c0d8a6ce40aa9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="error_8h.html#a8b07139a46e740af52c0d8a6ce40aa9c">error::restore</a> (PyObject *type, PyObject *value, PyObject *traceback)</td></tr>
-<tr class="memdesc:a8b07139a46e740af52c0d8a6ce40aa9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear the error indicator. If the error indicator is not set, there is no effect.  <a href="error_8h.html#a8b07139a46e740af52c0d8a6ce40aa9c">More...</a><br /></td></tr>
+<tr class="memdesc:a8b07139a46e740af52c0d8a6ce40aa9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the error indicator from the three objects. If the error indicator is already set, it is cleared first.  <a href="error_8h.html#a8b07139a46e740af52c0d8a6ce40aa9c">More...</a><br /></td></tr>
 <tr class="separator:a8b07139a46e740af52c0d8a6ce40aa9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b24a4645765ece4961a205a86331989"><td class="memItemLeft" align="right" valign="top"><a id="a6b24a4645765ece4961a205a86331989"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>error::set::string</b> ()</td></tr>
@@ -96,10 +107,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>error::set::string</b
 void&#160;</td><td class="memItemRight" valign="bottom"><b>error::set::object</b> ()</td></tr>
 <tr class="separator:a84014ab0c8b5b59d6c6a3fc74d5b4d62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac12e44f55b7e65fd91f26d59d8299f45"><td class="memItemLeft" align="right" valign="top"><a id="ac12e44f55b7e65fd91f26d59d8299f45"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="error_8h.html#ac12e44f55b7e65fd91f26d59d8299f45">error::set::none</a> (PyObject *type)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceerror_1_1set.html#ac12e44f55b7e65fd91f26d59d8299f45">error::set::none</a> (PyObject *type)</td></tr>
 <tr class="memdesc:ac12e44f55b7e65fd91f26d59d8299f45"><td class="mdescLeft">&#160;</td><td class="mdescRight">shorthand for PyErr_SetObject(type, Py_None). <br /></td></tr>
 <tr class="separator:ac12e44f55b7e65fd91f26d59d8299f45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2be026412cf8602303212e885d1ae364"><td class="memItemLeft" align="right" valign="top">PyObject *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="error_8h.html#a2be026412cf8602303212e885d1ae364">error::set::fromErrno</a> (PyObject *type)</td></tr>
+<tr class="memitem:a2be026412cf8602303212e885d1ae364"><td class="memItemLeft" align="right" valign="top">PyObject *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceerror_1_1set.html#a2be026412cf8602303212e885d1ae364">error::set::fromErrno</a> (PyObject *type)</td></tr>
 <tr class="separator:a2be026412cf8602303212e885d1ae364"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a53af34e8f459c9826cee62151bf10e55"><td class="memItemLeft" align="right" valign="top"><a id="a53af34e8f459c9826cee62151bf10e55"></a>
 PyObject *&#160;</td><td class="memItemRight" valign="bottom"><b>error::set::fromErrnoWithFilenameObject</b> (PyObject *type, PyObject *filenameObject)</td></tr>
@@ -107,49 +118,27 @@ PyObject *&#160;</td><td class="memItemRight" valign="bottom"><b>error::set::fro
 <tr class="memitem:af25bd5ea2d1e4b8352519fc8322ff584"><td class="memItemLeft" align="right" valign="top"><a id="af25bd5ea2d1e4b8352519fc8322ff584"></a>
 PyObject *&#160;</td><td class="memItemRight" valign="bottom"><b>error::set::importError</b> (PyObject *msg, PyObject *name, PyObject *path)</td></tr>
 <tr class="separator:af25bd5ea2d1e4b8352519fc8322ff584"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5cb01be9f02c07e1807b0f19e98b1590"><td class="memItemLeft" align="right" valign="top"><a id="a5cb01be9f02c07e1807b0f19e98b1590"></a>
-PyObject *&#160;</td><td class="memItemRight" valign="bottom"><b>error::format</b> ()</td></tr>
-<tr class="separator:a5cb01be9f02c07e1807b0f19e98b1590"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af27db9bf0c859cb9f9b2c0484bc2f85d"><td class="memItemLeft" align="right" valign="top"><a id="af27db9bf0c859cb9f9b2c0484bc2f85d"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="error_8h.html#af27db9bf0c859cb9f9b2c0484bc2f85d">error::badArgument</a> ()</td></tr>
 <tr class="memdesc:af27db9bf0c859cb9f9b2c0484bc2f85d"><td class="mdescLeft">&#160;</td><td class="mdescRight">shorthand for PyErr_SetString(PyExc_TypeError, message), where message indicates that a built-in operation was invoked with an illegal argument, mostly intended for internal use <br /></td></tr>
 <tr class="separator:af27db9bf0c859cb9f9b2c0484bc2f85d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a4eaa84b5038426b6fab51b7334e45e"><td class="memItemLeft" align="right" valign="top">PyObject *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="error_8h.html#a1a4eaa84b5038426b6fab51b7334e45e">error::NoMemory</a> ()</td></tr>
-<tr class="memdesc:a1a4eaa84b5038426b6fab51b7334e45e"><td class="mdescLeft">&#160;</td><td class="mdescRight">shorthand for PyErr_SetNone(PyExc_MemoryError).  <a href="error_8h.html#a1a4eaa84b5038426b6fab51b7334e45e">More...</a><br /></td></tr>
-<tr class="separator:a1a4eaa84b5038426b6fab51b7334e45e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19667cc18d0bdcd5b3712cd4441e93dd"><td class="memItemLeft" align="right" valign="top">PyObject *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="error_8h.html#a19667cc18d0bdcd5b3712cd4441e93dd">error::noMemory</a> ()</td></tr>
+<tr class="memdesc:a19667cc18d0bdcd5b3712cd4441e93dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">shorthand for PyErr_SetNone(PyExc_MemoryError).  <a href="error_8h.html#a19667cc18d0bdcd5b3712cd4441e93dd">More...</a><br /></td></tr>
+<tr class="separator:a19667cc18d0bdcd5b3712cd4441e93dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>wrapper for Python error interface </p>
 <dl class="section author"><dt>Author</dt><dd>Tyler R. Drury </dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>(C) June 12 2018-present, Tyler R. Drury. All Rights Reserved. </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="file_a2be026412cf8602303212e885d1ae364"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#file_a2be026412cf8602303212e885d1ae364">&#9670;&nbsp;</a></span>fromErrno()</h2>
+<a id="file_a19667cc18d0bdcd5b3712cd4441e93dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#file_a19667cc18d0bdcd5b3712cd4441e93dd">&#9670;&nbsp;</a></span>noMemory()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">PyObject* error::set::fromErrno </td>
-          <td>(</td>
-          <td class="paramtype">PyObject *&#160;</td>
-          <td class="paramname"><em>type</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>convenience function to raise an exception when a C library function has returned an error and set the C variable errno.It constructs a tuple object whose first item is the integer errno value and whose second item is the corresponding error message(gotten from strerror()), and then calls PyErr_SetObject(type, object). </p><dl class="section return"><dt>Returns</dt><dd>Alwways NULL, so a wrapper function around a system call can write return PyErr_SetFromErrno(type); when the system call returns an error. </dd></dl>
-
-</div>
-</div>
-<a id="file_a1a4eaa84b5038426b6fab51b7334e45e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#file_a1a4eaa84b5038426b6fab51b7334e45e">&#9670;&nbsp;</a></span>NoMemory()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">PyObject* error::NoMemory </td>
+          <td class="memname">PyObject* error::noMemory </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -194,8 +183,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="error
       </table>
 </div><div class="memdoc">
 
-<p>Clear the error indicator. If the error indicator is not set, there is no effect. </p>
-<dl class="section return"><dt>Returns</dt><dd>borrowed referenceRetrieve the error indicator into three variables whose addresses are passed Set the error indicator from the three objects. If the error indicator is already set, it is cleared first </dd></dl>
+<p>Set the error indicator from the three objects. If the error indicator is already set, it is cleared first. </p>
 <dl class="section note"><dt>Note</dt><dd>If the objects are NULL, the error indicator is cleared. </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Do not pass a NULL type and non-NULL value or traceback. The exception type should be a class. Do not pass an invalid exception type or value. (Violating these rules will cause subtle problems later). </dd></dl>
 

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['merge',['merge',['../structdict.html#a5428daeeead2262ed3a8c4372c83314d',1,'dict']]]
+  ['merge',['merge',['../structdictionary.html#a685be34330d2af7336b6bbddd21f1441',1,'dictionary']]]
 ];

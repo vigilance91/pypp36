@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['dict',['dict',['../structdict.html',1,'']]]
+  ['dictionary',['dictionary',['../structdictionary.html',1,'']]]
 ];

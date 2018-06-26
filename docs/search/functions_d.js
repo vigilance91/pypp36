@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['parseint',['parseInt',['../py_8h.html#ad15643aeccfd3324d5d72da3f029b85a',1,'py.h']]],
-  ['parseuint',['parseUInt',['../py_8h.html#aa6cb23ddf500353e512b8da237c5d481',1,'py.h']]]
+  ['resetwarnoptions',['resetWarnOptions',['../namespacesys.html#a718b86217cc58519d55390700e02c58e',1,'sys']]],
+  ['restore',['restore',['../error_8h.html#a8b07139a46e740af52c0d8a6ce40aa9c',1,'error']]]
 ];

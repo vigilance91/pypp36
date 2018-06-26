@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.13"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Python++: py.h File Reference</title>
+<title>Python++36: py.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Python++
+   <div id="projectname">Python++36
    &#160;<span id="projectnumber">0.1.0</span>
    </div>
   </td>
@@ -79,11 +79,11 @@ Namespaces</h2></td></tr>
 <tr class="memitem:namespacepy"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepy.html">py</a></td></tr>
 <tr class="memdesc:namespacepy"><td class="mdescLeft">&#160;</td><td class="mdescRight">Python API namespace. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacepy_1_1set"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepy_1_1set.html">py::set</a></td></tr>
-<tr class="memdesc:namespacepy_1_1set"><td class="mdescLeft">&#160;</td><td class="mdescRight">interface for setting values within the executing interpreter instance <br /></td></tr>
+<tr class="memitem:namespacepy_1_1__set"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepy_1_1__set.html">py::_set</a></td></tr>
+<tr class="memdesc:namespacepy_1_1__set"><td class="mdescLeft">&#160;</td><td class="mdescRight">interface for setting values within the executing interpreter instance <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:namespacepy_1_1get"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepy_1_1get.html">py::get</a></td></tr>
-<tr class="memdesc:namespacepy_1_1get"><td class="mdescLeft">&#160;</td><td class="mdescRight">interface for setting values for the executing interpreter instance <br /></td></tr>
+<tr class="memitem:namespacepy_1_1__get"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepy_1_1__get.html">py::_get</a></td></tr>
+<tr class="memdesc:namespacepy_1_1__get"><td class="mdescLeft">&#160;</td><td class="mdescRight">interface for setting values for the executing interpreter instance <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -97,79 +97,77 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ad15643aeccfd3324d5d72da3f029b85a"><td class="memItemLeft" align="right" valign="top"><a id="ad15643aeccfd3324d5d72da3f029b85a"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="py_8h.html#ad15643aeccfd3324d5d72da3f029b85a">parseInt</a> (PyObject *obj)</td></tr>
-<tr class="memdesc:ad15643aeccfd3324d5d72da3f029b85a"><td class="mdescLeft">&#160;</td><td class="mdescRight">parse python object as a C 32 bit signed integer <br /></td></tr>
-<tr class="separator:ad15643aeccfd3324d5d72da3f029b85a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6cb23ddf500353e512b8da237c5d481"><td class="memItemLeft" align="right" valign="top"><a id="aa6cb23ddf500353e512b8da237c5d481"></a>
-unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="py_8h.html#aa6cb23ddf500353e512b8da237c5d481">parseUInt</a> (PyObject *obj)</td></tr>
-<tr class="memdesc:aa6cb23ddf500353e512b8da237c5d481"><td class="mdescLeft">&#160;</td><td class="mdescRight">parse python object as a C 32 bit unsigned integer <br /></td></tr>
-<tr class="separator:aa6cb23ddf500353e512b8da237c5d481"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad05fec7a026eff5c4aa6bd238aadfe2a"><td class="memItemLeft" align="right" valign="top"><a id="ad05fec7a026eff5c4aa6bd238aadfe2a"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepy.html#ad05fec7a026eff5c4aa6bd238aadfe2a">py::init</a> ()</td></tr>
 <tr class="memdesc:ad05fec7a026eff5c4aa6bd238aadfe2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">initilize interpreter <br /></td></tr>
 <tr class="separator:ad05fec7a026eff5c4aa6bd238aadfe2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0be244c3ae63600a8500083bdc768e47"><td class="memItemLeft" align="right" valign="top"><a id="a0be244c3ae63600a8500083bdc768e47"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepy.html#a0be244c3ae63600a8500083bdc768e47">py::isInitialized</a> ()</td></tr>
-<tr class="memdesc:a0be244c3ae63600a8500083bdc768e47"><td class="mdescLeft">&#160;</td><td class="mdescRight">is a running instanse of the Python interpreter already running <br /></td></tr>
-<tr class="separator:a0be244c3ae63600a8500083bdc768e47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24aaf8e75514c343de0d5dbf5141f2ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepy.html#a24aaf8e75514c343de0d5dbf5141f2ef">py::finailze</a> ()</td></tr>
 <tr class="memdesc:a24aaf8e75514c343de0d5dbf5141f2ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">finalize interpreter, deallocating all resources and disabling any further calls to python functions  <a href="namespacepy.html#a24aaf8e75514c343de0d5dbf5141f2ef">More...</a><br /></td></tr>
 <tr class="separator:a24aaf8e75514c343de0d5dbf5141f2ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a479b2ee95091423a289710459aacb1c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepy.html#a479b2ee95091423a289710459aacb1c6">py::fatalError</a> (const char *msg)</td></tr>
-<tr class="memdesc:a479b2ee95091423a289710459aacb1c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print a fatal error message and kill the process.  <a href="namespacepy.html#a479b2ee95091423a289710459aacb1c6">More...</a><br /></td></tr>
+<tr class="memitem:a479b2ee95091423a289710459aacb1c6"><td class="memItemLeft" align="right" valign="top"><a id="a479b2ee95091423a289710459aacb1c6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>py::fatalError</b> (const char *msg)</td></tr>
 <tr class="separator:a479b2ee95091423a289710459aacb1c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a972a8f1c7cfdad56afd37bbb77d517b8"><td class="memItemLeft" align="right" valign="top"><a id="a972a8f1c7cfdad56afd37bbb77d517b8"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepy.html#a972a8f1c7cfdad56afd37bbb77d517b8">py::exit</a> (int status)</td></tr>
 <tr class="memdesc:a972a8f1c7cfdad56afd37bbb77d517b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exit the current process. This calls Py_Finalize() and then calls the standard C library function exit(status). <br /></td></tr>
 <tr class="separator:a972a8f1c7cfdad56afd37bbb77d517b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0be244c3ae63600a8500083bdc768e47"><td class="memItemLeft" align="right" valign="top"><a id="a0be244c3ae63600a8500083bdc768e47"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepy.html#a0be244c3ae63600a8500083bdc768e47">py::isInitialized</a> ()</td></tr>
+<tr class="memdesc:a0be244c3ae63600a8500083bdc768e47"><td class="mdescLeft">&#160;</td><td class="mdescRight">is a running instanse of the Python interpreter already running <br /></td></tr>
+<tr class="separator:a0be244c3ae63600a8500083bdc768e47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f64b92f0cd1f3bd4ab560a2dc088c30"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepy.html#a0f64b92f0cd1f3bd4ab560a2dc088c30">py::atExit</a> (void(*func)())</td></tr>
-<tr class="memdesc:a0f64b92f0cd1f3bd4ab560a2dc088c30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a cleanup function to be called by Py_Finalize().  <a href="namespacepy.html#a0f64b92f0cd1f3bd4ab560a2dc088c30">More...</a><br /></td></tr>
+<tr class="memdesc:a0f64b92f0cd1f3bd4ab560a2dc088c30"><td class="mdescLeft">&#160;</td><td class="mdescRight">finalize interpreter, deallocating all resources and disabling any further calls to python functions  <a href="namespacepy.html#a0f64b92f0cd1f3bd4ab560a2dc088c30">More...</a><br /></td></tr>
 <tr class="separator:a0f64b92f0cd1f3bd4ab560a2dc088c30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4bb6c68743ac1d3b2efda754e6e96eed"><td class="memItemLeft" align="right" valign="top"><a id="a4bb6c68743ac1d3b2efda754e6e96eed"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>py::set::standardStreamEncoding</b> (char *encoding, char *errors)</td></tr>
-<tr class="separator:a4bb6c68743ac1d3b2efda754e6e96eed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b2687de2f2e18e72fe6e0a518be7d8e"><td class="memItemLeft" align="right" valign="top"><a id="a5b2687de2f2e18e72fe6e0a518be7d8e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>py::set::programName</b> (wchar_t *name)</td></tr>
-<tr class="separator:a5b2687de2f2e18e72fe6e0a518be7d8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb668acbf9e15618786ab2ec7010677e"><td class="memItemLeft" align="right" valign="top"><a id="abb668acbf9e15618786ab2ec7010677e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>py::set::path</b> (const wchar_t *p)</td></tr>
-<tr class="separator:abb668acbf9e15618786ab2ec7010677e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a868e10d14c445fdebaa07415c9ab5f"><td class="memItemLeft" align="right" valign="top"><a id="a4a868e10d14c445fdebaa07415c9ab5f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>py::set::pythonHome</b> (wchar_t *home)</td></tr>
-<tr class="separator:a4a868e10d14c445fdebaa07415c9ab5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af75c15a390f5c85e2fab0078fd3c961d"><td class="memItemLeft" align="right" valign="top"><a id="af75c15a390f5c85e2fab0078fd3c961d"></a>
-wchar_t *&#160;</td><td class="memItemRight" valign="bottom"><b>py::get::execPrefix</b> ()</td></tr>
-<tr class="separator:af75c15a390f5c85e2fab0078fd3c961d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3dbeb11e9c72d859078ca035681a95b4"><td class="memItemLeft" align="right" valign="top"><a id="a3dbeb11e9c72d859078ca035681a95b4"></a>
-wchar_t *&#160;</td><td class="memItemRight" valign="bottom"><b>py::get::program::name</b> ()</td></tr>
-<tr class="separator:a3dbeb11e9c72d859078ca035681a95b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cdeee8c40d3755c80ecab020311ff1e"><td class="memItemLeft" align="right" valign="top"><a id="a6cdeee8c40d3755c80ecab020311ff1e"></a>
-wchar_t *&#160;</td><td class="memItemRight" valign="bottom"><b>py::get::program::fullPath</b> ()</td></tr>
-<tr class="separator:a6cdeee8c40d3755c80ecab020311ff1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0899b08382b1d23ad574c47dc7579217"><td class="memItemLeft" align="right" valign="top"><a id="a0899b08382b1d23ad574c47dc7579217"></a>
-wchar_t *&#160;</td><td class="memItemRight" valign="bottom"><b>py::get::path</b> ()</td></tr>
-<tr class="separator:a0899b08382b1d23ad574c47dc7579217"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76164bfd8b5a36f8c836e77c775baedf"><td class="memItemLeft" align="right" valign="top"><a id="a76164bfd8b5a36f8c836e77c775baedf"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepy_1_1get.html#a76164bfd8b5a36f8c836e77c775baedf">py::get::version</a> ()</td></tr>
-<tr class="memdesc:a76164bfd8b5a36f8c836e77c775baedf"><td class="mdescLeft">&#160;</td><td class="mdescRight">python version <br /></td></tr>
-<tr class="separator:a76164bfd8b5a36f8c836e77c775baedf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6deb8854c3ba857f955e283c8085f29c"><td class="memItemLeft" align="right" valign="top"><a id="a6deb8854c3ba857f955e283c8085f29c"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><b>py::get::platform</b> ()</td></tr>
-<tr class="separator:a6deb8854c3ba857f955e283c8085f29c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a261ebdd84b1c3bddfaa4916427c5e8f6"><td class="memItemLeft" align="right" valign="top"><a id="a261ebdd84b1c3bddfaa4916427c5e8f6"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><b>py::get::copyright</b> ()</td></tr>
-<tr class="separator:a261ebdd84b1c3bddfaa4916427c5e8f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a93dba82df4a2656f8596f0cb573a0d7c"><td class="memItemLeft" align="right" valign="top"><a id="a93dba82df4a2656f8596f0cb573a0d7c"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepy_1_1get.html#a93dba82df4a2656f8596f0cb573a0d7c">py::get::complier</a> ()</td></tr>
-<tr class="memdesc:a93dba82df4a2656f8596f0cb573a0d7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">compiler version used to build python <br /></td></tr>
-<tr class="separator:a93dba82df4a2656f8596f0cb573a0d7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32990ab5460f138b09a7cdf5b419b857"><td class="memItemLeft" align="right" valign="top"><a id="a32990ab5460f138b09a7cdf5b419b857"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><b>py::get::buildInfo</b> ()</td></tr>
-<tr class="separator:a32990ab5460f138b09a7cdf5b419b857"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf9880916ce3160e746ff6293904b3b9"><td class="memItemLeft" align="right" valign="top"><a id="aaf9880916ce3160e746ff6293904b3b9"></a>
-wchar_t *&#160;</td><td class="memItemRight" valign="bottom"><b>py::get::pythonHome</b> ()</td></tr>
-<tr class="separator:aaf9880916ce3160e746ff6293904b3b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a157b54599d9a9d7e58fd5c60b1d669bd"><td class="memItemLeft" align="right" valign="top"><a id="a157b54599d9a9d7e58fd5c60b1d669bd"></a>
+wchar_t *&#160;</td><td class="memItemRight" valign="bottom"><b>py::program::name</b> ()</td></tr>
+<tr class="separator:a157b54599d9a9d7e58fd5c60b1d669bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcdc0feea25fd70bd866fc6a78866e47"><td class="memItemLeft" align="right" valign="top"><a id="afcdc0feea25fd70bd866fc6a78866e47"></a>
+wchar_t *&#160;</td><td class="memItemRight" valign="bottom"><b>py::program::fullPath</b> ()</td></tr>
+<tr class="separator:afcdc0feea25fd70bd866fc6a78866e47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a18a19a55cc6c4fdf31abbe2c2cd728"><td class="memItemLeft" align="right" valign="top"><a id="a7a18a19a55cc6c4fdf31abbe2c2cd728"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>py::_set::standardStreamEncoding</b> (char *encoding, char *errors)</td></tr>
+<tr class="separator:a7a18a19a55cc6c4fdf31abbe2c2cd728"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7756f7b9800cb28f5153f524ac67061a"><td class="memItemLeft" align="right" valign="top"><a id="a7756f7b9800cb28f5153f524ac67061a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>py::_set::programName</b> (wchar_t *name)</td></tr>
+<tr class="separator:a7756f7b9800cb28f5153f524ac67061a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6755c553f56cb3d6c116ea2a9a75c18c"><td class="memItemLeft" align="right" valign="top"><a id="a6755c553f56cb3d6c116ea2a9a75c18c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>py::_set::path</b> (const wchar_t *p)</td></tr>
+<tr class="separator:a6755c553f56cb3d6c116ea2a9a75c18c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a120cb3da247d82d6c824d8e696796be7"><td class="memItemLeft" align="right" valign="top"><a id="a120cb3da247d82d6c824d8e696796be7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>py::_set::pythonHome</b> (wchar_t *home)</td></tr>
+<tr class="separator:a120cb3da247d82d6c824d8e696796be7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4dcfb06f6ff5f8286e7c2cedb0d38c6"><td class="memItemLeft" align="right" valign="top"><a id="ae4dcfb06f6ff5f8286e7c2cedb0d38c6"></a>
+wchar_t *&#160;</td><td class="memItemRight" valign="bottom"><b>py::_get::path</b> ()</td></tr>
+<tr class="separator:ae4dcfb06f6ff5f8286e7c2cedb0d38c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad236d64c05a499d496230cb65264420e"><td class="memItemLeft" align="right" valign="top"><a id="ad236d64c05a499d496230cb65264420e"></a>
+wchar_t *&#160;</td><td class="memItemRight" valign="bottom"><b>py::_get::execPrefix</b> ()</td></tr>
+<tr class="separator:ad236d64c05a499d496230cb65264420e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf5b8ff08504b8e615116309aae094a9"><td class="memItemLeft" align="right" valign="top"><a id="acf5b8ff08504b8e615116309aae094a9"></a>
+wchar_t *&#160;</td><td class="memItemRight" valign="bottom"><b>py::_get::pythonHome</b> ()</td></tr>
+<tr class="separator:acf5b8ff08504b8e615116309aae094a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0d308d4c910401917dd6d4de4e49880"><td class="memItemLeft" align="right" valign="top"><a id="ac0d308d4c910401917dd6d4de4e49880"></a>
+wchar_t *&#160;</td><td class="memItemRight" valign="bottom"><b>py::_get::program::name</b> ()</td></tr>
+<tr class="separator:ac0d308d4c910401917dd6d4de4e49880"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2846f6ed5cd4d06d857f8c3992c19bb0"><td class="memItemLeft" align="right" valign="top"><a id="a2846f6ed5cd4d06d857f8c3992c19bb0"></a>
+wchar_t *&#160;</td><td class="memItemRight" valign="bottom"><b>py::_get::program::fullPath</b> ()</td></tr>
+<tr class="separator:a2846f6ed5cd4d06d857f8c3992c19bb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a209a9f9ae6ca37516497bb3f7a15a5ed"><td class="memItemLeft" align="right" valign="top"><a id="a209a9f9ae6ca37516497bb3f7a15a5ed"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepy_1_1__get.html#a209a9f9ae6ca37516497bb3f7a15a5ed">py::_get::version</a> ()</td></tr>
+<tr class="memdesc:a209a9f9ae6ca37516497bb3f7a15a5ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">python version <br /></td></tr>
+<tr class="separator:a209a9f9ae6ca37516497bb3f7a15a5ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a828e5c2dd9bcd9dcc84e4975433998df"><td class="memItemLeft" align="right" valign="top"><a id="a828e5c2dd9bcd9dcc84e4975433998df"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>py::_get::platform</b> ()</td></tr>
+<tr class="separator:a828e5c2dd9bcd9dcc84e4975433998df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add2a5d78176477ae6a3d91cf5f45142b"><td class="memItemLeft" align="right" valign="top"><a id="add2a5d78176477ae6a3d91cf5f45142b"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>py::_get::copyright</b> ()</td></tr>
+<tr class="separator:add2a5d78176477ae6a3d91cf5f45142b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a368815c49bd09e647efde0bfa1f0fb00"><td class="memItemLeft" align="right" valign="top"><a id="a368815c49bd09e647efde0bfa1f0fb00"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacepy_1_1__get.html#a368815c49bd09e647efde0bfa1f0fb00">py::_get::complier</a> ()</td></tr>
+<tr class="memdesc:a368815c49bd09e647efde0bfa1f0fb00"><td class="mdescLeft">&#160;</td><td class="mdescRight">compiler version used to build python <br /></td></tr>
+<tr class="separator:a368815c49bd09e647efde0bfa1f0fb00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fbb6cb3e3e77383f9e2742195628a2f"><td class="memItemLeft" align="right" valign="top"><a id="a6fbb6cb3e3e77383f9e2742195628a2f"></a>
+const char *&#160;</td><td class="memItemRight" valign="bottom"><b>py::_get::buildInfo</b> ()</td></tr>
+<tr class="separator:a6fbb6cb3e3e77383f9e2742195628a2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>python c api, C++ wrapper for fast, modern Python development </p>
